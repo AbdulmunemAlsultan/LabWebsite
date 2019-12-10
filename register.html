@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+
+</head>
+
+<body class="minpage">
+    <div class="container">
+        <div class="header">
+            <h1>Laboratory Website</h1>
+
+            <h2 class="user">
+                New User ?
+            </h2>
+            <a class="register" href="register.html">
+                        REGISTER 
+                    </a>
+        </div>
+        <div class="nav">
+
+            <img id="list-item" src="img/list.png" width="30" height="40" alt="list-items" style="float: right;" />
+            <li style="display:inline-block"><a class="active" href="index.html">Laboratory Website</a></li>
+            <li><a href="contact-us.html">Contact Lab Tutor</a></li>
+            <li><a href="office-hours.html">Office Hours</a></li>
+            <li><a href="about-us.html"> About US</a></li>
+            <li><a href="admin.html">Admin</a></li>
+        </div>
+    </div>
+    <form action="">
+        <div class="container-form  registerForm">
+
+            <div class="box boxregister">
+                <h2>
+                    Registration
+                </h2>
+                <input class="inpur" type="text" name="Fullname" placeholder="Full Name" required="">
+                <input class="inpur" type="email" required="" name="Email" placeholder="Youremail@domain.com">
+
+                <select class="input-massage" name="Gender">
+                   <option>Gender</option> 
+                    <option value="Male">
+                           Male
+                       </option>
+                       <option value="Female">
+                           Female
+                       </option>
+                   </select>
+
+
+                <input class="inpur" type="text" maxlength="10" name="Phone" placeholder="Phone">
+                <select class="input-massage" name="Country">
+                       <option>Country</option> 
+                          <option value="Saudi Arabia">Saudi Arabia</option>
+                          <option value="Sudan">Sudan</option>
+                          <option value="Morocco">Morocco</option>
+                          <option value="Iraq">Iraq</option>
+                          <option value="Egypt">Egypt</option>
+                          <option value="Tunisia">Tunisia</option>
+                          <option value="United Arab Emirates">United Arab Emirates</option>
+                          <option value="Jordan">Jordan</option>
+                          <option value="Libya">Libya</option>
+                          <option value="Kuwait">Kuwait</option>
+                          <option value="Bahrain">Bahrain</option>
+                          <option value="Oman">Oman</option> 
+                      </select>
+
+
+                <select class="input-massage" name="LabID" onchange="SelectedTextValue(this)">
+                     <option>LabID</option>   
+            <option value="1001">
+                1001
+            </option>
+            <option value="1005">
+                1005
+            </option>
+            <option value="1009">
+                1009
+            </option>
+            <option value="1010">
+                1010
+            </option>
+            <option value="1012">
+                1012
+            </option>
+
+
+            <option value="1040">
+                1040
+            </option>
+            <option value="1042">
+                1042
+            </option>
+            <option value="1044">
+                1044
+            </option>
+            <option value="2008">
+                2008
+            </option>
+           
+        </select>
+
+                <input class="inpur" type="text" maxlength="" name="LabName" placeholder="Lab Name" readonly="" id="txtchang">
+
+                <input class="inpur" type="text" name="Username" maxlength="8" placeholder="Username">
+
+
+                <input class="inpur" type="text" name="Password" maxlength="8" placeholder="Password">
+
+
+
+                <button class="register" name="submitdata" type="submit" onclick="return vildatetion()">Register</button>
+            </div>
+            <div class="box backgroundbox">
+
+
+            </div>
+
+
+
+        </div>
+    </form>
+    <div class="footer">
+        &copy; KFU student of CCSIT (LBWS)
+    </div>
+
+
+
+    <!-- <script src="js/script.js"></script> -->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
